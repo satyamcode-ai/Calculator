@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(to left,rgb(51, 199, 31),rgb(18, 59, 180));
+    margin-top: 15vmin;
+    padding: 0;
+}
+
+.calculator-grid{
+    height: 70vmin;
+    width: 44vmin;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button{
+    height: 10vmin;
+    width: 10vmin;
+    cursor: pointer;
+    font-size: 2rem;
+    color: aliceblue;
+    box-shadow: 10px 10px 10px 3px black;
+    outline: none;
+    background-color: rgb(19, 19, 19);
+}
+
+button:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.span-two{
+    width: 45%;
+    background-color: rgb(55, 55, 245) ;
+}
+
+.span-two:hover{
+    background-color: rgb(19, 25, 189);
+}
+
+.output{
+    height: 15vmin;
+    width: 92%;
+    box-shadow: 10px 10px 10px 4px black;
+    background-color: rgb(44, 42, 42);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1vmin;
+    word-wrap:break-word;
+    word-break: break-all;
+    align-items: center;
+    color: aliceblue;
+    font-size: 9vmin;
+    font-weight: 800;
+    overflow: hidden;
+}
+
+.opr,.AC{
+    color: rgb(69, 69, 250);
+}
+
+.AC,.DEL{
+    font-size: 4vmin;
+    background-color: rgb(19, 19, 19);
+}
+
+.AC:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.AC,.span-two{
+    width: 21vmin;
+}
+
+@media (max-width:400px) {
+    body{
+        margin-top: 50%;
+    }
+    .calculator-grid{
+        height: 103vmin;
+        width: 63vmin;
+    }
+
+    button{
+        height: 15vmin;
+        width: 15vmin;
+    }
+
+    .AC,.span-two{
+        width: 30vmin;
+    }
+
+    .output{
+        height: 20vmin;
+        width: 95%;
+    }
+}
